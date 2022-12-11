@@ -1,12 +1,12 @@
 /*
-	* Base bot md by Ronzz YT
+	* Base bot md by Irfaan Official
 	* Jika ingin recode / upload silahkan asalkan kasih kredit
-	* Kredit : Ronzz YT
+	* Kredit : Irfaan Official
  
 	 「 Thanks To 」
 	@ My God
 	@ My Parents
-	@ Ronzz YT [ Base & Author ]
+	@ Irfaan Official [ Base & Author ]
 	@ Saipul Anuar [ Mastah ]
 	@ Danzz Coding [ Mastah ]
 	@ Penyedia Module
@@ -171,7 +171,7 @@ const isListMessage = dataListG.length !== 0 ? dataListG : dataList
 const reply = (teks) => {ronzz.sendMessage(from, { text: teks }, { quoted: msg })}
 const textImg = (teks) => {return ronzz.sendMessage(from, { text: teks, jpegThumbnail: fs.readFileSync(thumbnail) }, { quoted: msg })}
 const sendMess = (hehe, teks) => {ronzz.sendMessage(hehe, { text, teks })}
-const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `Bot Created By Ronzz YT\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;VelzzyBot,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(thumbnail)}}}
+const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `Bot Created By Irfaan Official\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Alfarabotz-MD,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(thumbnail)}}}
 function parseMention(text = '') {
 return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 }
@@ -198,7 +198,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {})
 "fileLength": "64455",
 "pageCount": 1,
 "mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
-"fileName": `VelzzyBOT ${ngazap(prefix)}`,
+"fileName": `Alfarabotz-MD ${ngazap(prefix)}`,
 "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
 }}}
 const sendMessRegis = (jid) => {ronzz.sendMessage(jid, { text: `Maaf @${sender.split('@')[0]}, kamu belum terdaftar di database bot, klik button *Verify* untuk memverifikasi.`, buttons: [{buttonId: '#verify', buttonText: {displayText: 'Verify'}, type: 1}], footer: `${botName} © 2022`, contextInfo: { forwardingScore: 9999999, isForwarded: true }, mentions: [sender]}, { quoted: fkontak })}
@@ -906,7 +906,7 @@ break
 
 case 'sourcecode':{
 let teks = `*-----------「 Thanks To 」-----------*
-*- Ronzz YT ( Base Dan Creator )*
+*- Irfaan Official ( Base Dan Creator )*
 *- Saipul Anuar ( Mastah )*
 *- Danzz Coding ( Mastah )*
 *- ${ownerName} ( Owner )*
@@ -944,10 +944,10 @@ case 'script': case 'sc':{
 let teks = `Hallo *${cekUser("id", sender) !== null ? cekUser("name", sender) : `${pushname}`}* ${ucapanWaktu} 👋
 *Script masih tahap perkembangan*
 
-Ini adalah *BASE BOT MD* buatan *Ronzz YT*
+Ini adalah *BASE BOT MD* buatan *Irfaan Official*
 
 *Link Script / Base Bot :*
-https://github.com/Ronzz-Ofc/BaseBotMD
+wa.me/6285624823115
 
 *Script no enc 100%*
 *Mudah untuk di recode*
@@ -1413,7 +1413,7 @@ break
 
 case 'translateid':{
 if (cekUser("id", sender) == null) return sendMessRegis(from)
-if (!q) return reply(`Ex : ${prefix+command} Teks Yang Ingin Di Translate\n\nContoh :\n${prefix+command} Hello my name is Ronzz YT`)
+if (!q) return reply(`Ex : ${prefix+command} Teks Yang Ingin Di Translate\n\nContoh :\n${prefix+command} Hello my name is Irfaan Official`)
 let translate_res = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/id?apikey=${lolkey}&text=${q}`)
 let text_translate = "*TRANSLATE*\n"
 text_translate += `*To :* ${translate_res.result.to}\n`
@@ -1427,7 +1427,7 @@ break
 
 case 'translateen':{
 if (cekUser("id", sender) == null) return sendMessRegis(from)
-if (!q) return reply(`Ex : ${prefix+command} Teks Yang Ingin Di Translate\n\nContoh :\n${prefix+command} Hello my name is Ronzz YT`)
+if (!q) return reply(`Ex : ${prefix+command} Teks Yang Ingin Di Translate\n\nContoh :\n${prefix+command} Hello my name is Irfaan Official`)
 let translate_res = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/en?apikey=${lolkey}&text=${q}`)
 let text_translate = "*TRANSLATE*\n"
 text_translate += `*To :* ${translate_res.result.to}\n`
@@ -2444,7 +2444,7 @@ let teksnya = "*TIK TOK DOWNLOADER*\n"
 teksnya += `*Judul:* ${video_tt.title}\n`
 teksnya += `*Author:* ${video_tt.author}\n`
 teksnya += `*Type:* mp4/video\n`
-teksnya += `*Creator:* Ronzz YT\n\n`
+teksnya += `*Creator:* Irfaan Official\n\n`
 teksnya += `Kamu bisa mengambil audio nya\n`
 teksnya += `Dengan cara di bawah ini!!\n\n`
 teksnya += `${prefix}tiktokmp3 ${q}`
@@ -2466,7 +2466,7 @@ let cp_ttmp3 = "*TIKTOK DOWNLOAD*\n"
 cp_ttmp3 += `*Judul:* ${audio_tt.title}\n`
 cp_ttmp3 += `*Author:* ${audio_tt.author}\n`
 cp_ttmp3 += `*Type:* mp3/audio\n`
-cp_ttmp3 += `*Creator:* Ronzz YT\n\n`
+cp_ttmp3 += `*Creator:* Irfaan Official\n\n`
 cp_ttmp3 += "Kamu bisa mengambil video nya\n"
 cp_ttmp3 += "Dengan cara di bawah ini!!\n\n"
 cp_ttmp3 += `${prefix}tiktokmp4 ${q}`
@@ -3359,7 +3359,7 @@ break
 
 case 'creategc':
 if (!isOwner) return reply(mess.owner)
-if (!q) return reply(`*Ex :*\n${prefix+command} Nama Group\n\nContoh :\n${prefix+command} Ronzz YT Team`)
+if (!q) return reply(`*Ex :*\n${prefix+command} Nama Group\n\nContoh :\n${prefix+command} Irfaan Official Team`)
 var nama_nya = q
 let cret = await ronzz.groupCreate(nama_nya, [])
 let response = await ronzz.groupInviteCode(cret.id)
@@ -3423,7 +3423,7 @@ var jumlah = q.split('|')[1]
 if (!num) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 if (!jumlah) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 for (let i = 0; i < jumlah; i++) {
-ronzz.sendMessage(num, {text:`VelzzyBOT ${virtex(prefix)}`}, {quoted:virusnya})
+ronzz.sendMessage(num, {text:`Alfarabotz-MD ${virtex(prefix)}`}, {quoted:virusnya})
 await sleep(1000)
 }
 mentions(`Sukses *${command}* to @${num.split('@')[0]} jumlah spam : ${jumlah}`, [num])
@@ -3438,7 +3438,7 @@ var jumlah = q.split('|')[1]
 if (!num) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 if (!jumlah) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 for (let i = 0; i < jumlah; i++) {
-ronzz.sendMessage(num, {text:`VelzzyBOT ${virus}`}, {quoted:virusnya})
+ronzz.sendMessage(num, {text:`Alfarabotz-MD ${virus}`}, {quoted:virusnya})
 await sleep(1000)
 }
 mentions(`Sukses *${command}* to @${num.split('@')[0]} jumlah spam : ${jumlah}`, [num])
@@ -3453,7 +3453,7 @@ var jumlah = q.split('|')[1]
 if (!num) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 if (!jumlah) return reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx|jumlah`)
 for (let i = 0; i < jumlah; i++) {
-ronzz.sendMessage(num, {text:`VelzzyBOT ${philips}`}, {quoted:virusnya})
+ronzz.sendMessage(num, {text:`Alfarabotz-MD ${philips}`}, {quoted:virusnya})
 await sleep(1000)
 }
 mentions(`Sukses *${command}* to @${num.split('@')[0]} jumlah spam : ${jumlah}`, [num])
@@ -3473,8 +3473,8 @@ var groupInvite = generateWAMessageFromContent(num, proto.Message.fromObject({
 "groupInviteMessage": {
 "groupJid": "85296556573-1328272333@g.us",
 "inviteCode": "wFHwtOxGQN8OwK2x",
-"inviteExpiration": `MY NAME Ronzz YT${ngazap(prefix)}`,
-"groupName": `MY NAME Ronzz YT${ngazap(prefix)}`,
+"inviteExpiration": `MY NAME Irfaan Official${ngazap(prefix)}`,
+"groupName": `MY NAME Irfaan Official${ngazap(prefix)}`,
 "caption": `${ngazap(prefix)}`,
 "jpegThumbnail": messa.imageMessage,
 }
@@ -3499,7 +3499,7 @@ var location = generateWAMessageFromContent(num, proto.Message.fromObject({
 "locationMessage": {
 "degreesLatitude": -6.936928157735237,
 "degreesLongitude": 107.72270679473877,
-"caption": `© Ronzz YT${ngazap(prefix)}`,
+"caption": `© Irfaan Official${ngazap(prefix)}`,
 "jpegThumbnail": messa.imageMessage,
 }
 }), { userJid: num, quoted: virusnya })
@@ -3525,9 +3525,9 @@ var order = generateWAMessageFromContent(num, proto.Message.fromObject({
 "itemCount": 100000000000,
 "status": "INQUIRY",
 "surface": "CATALOG",
-"message": `© Ronzz YT${ngazap(prefix)}`,
+"message": `© Irfaan Official${ngazap(prefix)}`,
 "jpegThumbnail": fs.readFileSync('./options/image/log.jpg'),
-"orderTitle": `© Ronzz YT${ngazap(prefix)}`,
+"orderTitle": `© Irfaan Official${ngazap(prefix)}`,
 "sellerJid": "628817839722@s.whatsapp.net",
 "token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
 "totalAmount1000": "500000000000000",
