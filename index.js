@@ -873,10 +873,10 @@ let teks = `Hallo *${cekUser("id", sender) !== null ? cekUser("name", sender) : 
 *Pilih aja payment di bawah ya☺*
 
 *Donasi • Emoney*
-- *Dana : 08817839722*
-- *Gopay : 08817839722*
-- *Ovo : 08817839722*
-- *Saweria : https://saweria.co/RonzzYT*
+- *Dana : 089531704997*
+- *Pulsa Im3 : 081646829895*
+- *Pulsa Telkomsel : 081385423329*
+- *Saweria : https://saweria.co/Irfaan567*
 - *SociaBuzz : https://sociabuzz.com/ronzzofc/donate*
 - *Qris : Scan qr di atas*
 
