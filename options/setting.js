@@ -5,15 +5,15 @@ const api = "https://ronzxapis.my.id" //Apabila link api error segera lapor ke o
 const apikey = "9291a7bk0p1" //login di https://ronzxapis.my.id to get apikey || login di https://ronzxapis.my.id untuk mendapatkan apikey
 
 //Other
-const botName = "Alfarabotz-MD" //Nama bot
-const owner = ["6285624823115","6285624823115"] //Ganti agar fitur owner bisa digunakan
-const ownerNomer = "6285624823115" //Nomor lu
-const ownerName = "Irfaan Official" //Nama lu
-const email = "Irfaanabdulhafidzh10@gmail.com" //Email lu
+const botName = "NiluhBotz-MD" //Nama bot
+const owner = ["4915256954581","6285852939370"] //Ganti agar fitur owner bisa digunakan
+const ownerNomer = "4915256954581" //Nomor lu
+const ownerName = "aLxNiluh" //Nama lu
+const email = "Alxniluh99@gmail.com" //Email lu
 const youtube = "https://youtube.com/@himhiachannel" //Youtube lu kalau ngga punya kasih tanda strip "-"
 const region = "Indonesia" //Region lu
-const footer = "Alfarabotz-MD © 2022" //Seterah
-const packname = "© Alfarabotz-MD" //Sticker wm ubah
+const footer = "Niluhbotz-MD © 2022" //Seterah
+const packname = "© Niluhbotz-MD" //Sticker wm ubah
 const author = "Di Buat Oleh Irfaan Official" //Sticker wm ubah nama lu
 const sessionName = "session" //Ngga usah di ganti
 
